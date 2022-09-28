@@ -37,10 +37,17 @@ const StyledDiv = styled.div`
   & a {
     color: white;
   }
+
+  @media (min-width: 500px) {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 const StyledButton = styled.button`
   color: #f9fbfc;
+  cursor: pointer;
   background: linear-gradient(91.26deg, #f7162d 47.78%, #e4182a 74.08%);
   border-radius: 0.6rem;
   border: none;
@@ -55,6 +62,7 @@ const StyledButton = styled.button`
   gap: 2.5rem;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 `;
 const StyledButtonContainer = styled.div`
   display: flex;
@@ -64,10 +72,11 @@ const StyledButtonContainer = styled.div`
 const StyledLink = styled(Link)`
   text-decoration: none;
   text-align: center;
-  padding: 1.7rem 1.2rem 1.5rem 10.1rem;
+  padding: 1.7rem 0;
   background: #191919;
   border-radius: 1rem;
   display: flex;
+  justify-content: center;
   gap: 1rem;
   & span {
     font-family: "Montserrat";

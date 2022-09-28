@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
+import "./YourTable.css";
 
 // Component imports
 import Header from "./Header";
@@ -17,6 +18,7 @@ const LayoutContainer = styled.div`
 
 const StyledButton = styled.button`
   color: #f9fbfc;
+  cursor: pointer;
   background: linear-gradient(91.26deg, #f7162d 47.78%, #e4182a 74.08%);
   border-radius: 0.6rem;
   border: none;
@@ -37,6 +39,11 @@ const StyledContainer = styled.div`
   border-top-right-radius: 1rem;
   flex: 1;
   padding: 0.8rem;
+  @media (min-width: 500px) {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 const StyledButtonContainer = styled.div`
@@ -117,7 +124,7 @@ const StyledRemainingCard = styled.div`
       color: #fafafa;
     }
     & .price {
-      font-family: "Manrope";
+      font-family: Manrope;
       font-style: normal;
       font-weight: 800;
       font-size: 2.4rem;
@@ -166,6 +173,7 @@ const StyledDrawerContainer = styled.div`
     gap: 1rem;
     & button {
       background: #e4182a;
+      cursor: pointer;
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 400;
@@ -250,6 +258,7 @@ const YourTable = () => {
           onClose={toggleDrawer}
           direction="bottom"
           size={150}
+          className="test"
         >
           <StyledDrawerContainer>
             <span>Select Type of Payment </span>

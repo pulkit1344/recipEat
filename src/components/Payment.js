@@ -12,6 +12,11 @@ const StyledContainer = styled.div`
   border-top-right-radius: 1.7rem;
   background: #212121;
   box-shadow: 0rem 0.9rem 3.9rem rgba(0, 0, 0, 0.63);
+  @media (min-width: 500px) {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 const Styledh4 = styled.h4`
   text-align: center;
@@ -67,7 +72,7 @@ const StyledItemsList = styled.div`
     opacity: 0.5;
   }
   .list-itm {
-    font-family: "Montserrat";
+    font-family:"Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 1.2rem;
@@ -82,6 +87,7 @@ const StyledItemsList = styled.div`
     border-radius: 0.3rem;
     height: 2.4rem;
     width: 2.4rem;
+    cursor: pointer;
   }
   & input:checked {
     accent-color: #212121;
@@ -128,6 +134,7 @@ const ItemContainer = styled.div`
 
 const StyledButton = styled.button`
   color: #f9fbfc;
+  cursor: pointer;
   background: linear-gradient(91.26deg, #f7162d 47.78%, #e4182a 74.08%);
   border-radius: 0.6rem;
   border: none;
@@ -157,6 +164,7 @@ const StyledBillButtons = styled.div`
     line-height: 1.1rem;
     width: 10.5rem;
     height: 2.85rem;
+    cursor: pointer;
   }
 
   .see-total {
@@ -171,6 +179,7 @@ const StyledBillButtons = styled.div`
     width: 10.5rem;
     height: 2.85rem;
     color: #f9fbfc;
+    cursor: pointer;
   }
 `;
 

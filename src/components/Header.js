@@ -18,11 +18,13 @@ const StyledHeaderContainer = styled.div`
   margin-top: 7.7rem;
   & > span {
     color: white;
+    cursor: pointer;
   }
   & .user {
     border-radius: 50%;
     height: 2.33rem;
     width: 2.33rem;
+    cursor: pointer;
   }
   & .app-logo {
     width: 11.4rem;

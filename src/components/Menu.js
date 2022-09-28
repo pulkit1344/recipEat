@@ -12,6 +12,11 @@ const LayoutContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+  @media (min-width: 500px) {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 const StyledImg = styled.img`
@@ -23,7 +28,7 @@ const Menu = () => {
   return (
     <LayoutContainer>
       <Header title="Menu" />
-      <StyledImg src={orderMenu} width="100%" />
+      <StyledImg src={orderMenu} />
     </LayoutContainer>
   );
 };

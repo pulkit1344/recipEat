@@ -20,6 +20,11 @@ const StyledDiv = styled.div`
   flex: 1;
   gap: 20rem;
   padding: 0.8rem;
+  @media (min-width: 500px) {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 const Styledh4 = styled.h4`

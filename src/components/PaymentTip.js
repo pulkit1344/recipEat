@@ -56,6 +56,11 @@ const StyledContainer = styled.div`
     color: #ffffff;
     padding: 0 0.9rem;
   }
+  @media (min-width: 500px) {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 const PaymentContainer = styled.div`
   background: white;
@@ -73,7 +78,7 @@ const PaymentContainer = styled.div`
     flex-direction: column;
   }
   & .price {
-    font-family: "Manrope";
+    font-family: Manrope;
     font-style: normal;
     font-weight: 800;
     font-size: 2.4rem;
@@ -126,10 +131,12 @@ const PercentageSpan = styled.span`
   line-height: 150%;
   letter-spacing: 0.02rem;
   color: #ffffff;
+  cursor: pointer;
 `;
 
 const StyledButton = styled.button`
   color: #f9fbfc;
+  cursor: pointer;
   background: linear-gradient(91.26deg, #f7162d 47.78%, #e4182a 74.08%);
   border-radius: 0.6rem;
   border: none;
@@ -206,6 +213,7 @@ const CustomTip = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
     }
   }
   & .label {
@@ -242,6 +250,7 @@ const CustomTip = styled.div`
 const PaymentBox = styled.div`
   background: ${(props) =>
     props.selectedPaymentOption === props.default ? "#5C5C5C" : "#2D2D2D"};
+  cursor: pointer;
 `;
 
 const PaymentTip = () => {

@@ -23,6 +23,11 @@ const StyledContainer = styled.div`
 
   flex: 1;
   padding: 0.8rem;
+  @media (min-width: 500px) {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 const Styledh4 = styled.h4`
@@ -43,6 +48,7 @@ const Styledh4 = styled.h4`
 
 const StyledButton = styled.button`
   color: #f9fbfc;
+  cursor: pointer;
   background: linear-gradient(91.26deg, #f7162d 47.78%, #e4182a 74.08%);
   border-radius: 0.6rem;
   border: none;
@@ -86,6 +92,7 @@ const PriceBox = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
     }
     & span {
       color: white;
@@ -103,6 +110,7 @@ const PriceBox = styled.div`
       dispaly: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
     }
     & .total {
       background: #212121;
@@ -118,6 +126,7 @@ const PriceBox = styled.div`
       color: #f9fbfc;
       width: 10.5rem;
       height: 2.85rem;
+      cursor: pointer;
     }
     & .val {
       font-family: "Roboto";

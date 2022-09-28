@@ -22,6 +22,11 @@ const StyledContainer = styled.div`
   flex: 1;
   background: #212121;
   box-shadow: 0rem 0.9rem 3.9rem rgba(0, 0, 0, 0.63);
+  @media (min-width: 500px) {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 const CreateAccountContainer = styled.div`
@@ -34,6 +39,7 @@ const CreateAccountContainer = styled.div`
 
 const StyledButton = styled.button`
   color: #f9fbfc;
+  cursor: pointer;
   background: linear-gradient(91.26deg, #f7162d 47.78%, #e4182a 74.08%);
   border-radius: 0.3rem;
   border: none;
@@ -47,7 +53,7 @@ const DetailsBox = styled.div`
   margin-bottom: 3rem;
   gap: 4.1rem;
   & span {
-    font-family: "Montserrat";
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 700;
     font-size: 1.2rem;
@@ -121,7 +127,7 @@ const PaymentBox = styled.div`
     justify-content: flex-end;
   }
   & .payment-label {
-    font-family: "Montserrat";
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 1.4rem;
@@ -130,7 +136,7 @@ const PaymentBox = styled.div`
     color: #212121;
   }
   & .table {
-    font-family: "Montserrat";
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
     font-size: 1rem;
@@ -152,7 +158,7 @@ const PriceBox = styled.div`
     justify-content: space-between;
   }
   & span {
-    font-family: "Montserrat";
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 1.4rem;
@@ -196,7 +202,7 @@ const PaymentConfirmations = () => {
             <span className="payment-label">Your Payment</span>
             <span className="table">Table #4</span>
           </div>
-          <span>$ {(tip + totalPrice)}</span>
+          <span>$ {tip + totalPrice}</span>
         </PaymentBox>
         <EmailContainer>
           <span>Get your recipeat receipt</span>
