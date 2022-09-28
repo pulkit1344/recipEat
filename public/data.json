@@ -1,0 +1,30 @@
+[
+    {
+        "item": "Big Mac",
+        "unit": 2,
+        "price": 25.00,
+        "remaining": true,
+        "id": 1
+    },
+    {
+        "item": "Double Quarter pounder",
+        "unit": 1,
+        "price": 20.00,
+        "remaining": true,
+        "id": 2
+    },
+    {
+        "item": "Fillet-o-Fish Meal",
+        "unit": 1,
+        "price": 30.00,
+        "remaining": false,
+        "id": 3
+    },
+    {
+        "item": "Mango Pineapple Smoothie",
+        "unit": 2,
+        "price": 10.00,
+        "remaining": false,
+        "id": 4
+    }
+]
