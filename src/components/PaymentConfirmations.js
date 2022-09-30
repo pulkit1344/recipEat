@@ -43,8 +43,8 @@ const StyledButton = styled.button`
   background: linear-gradient(91.26deg, #f7162d 47.78%, #e4182a 74.08%);
   border-radius: 0.3rem;
   border: none;
-  width: 12.7rem;
-  height: 3rem;
+  padding: 0.9rem 1.4rem;
+  display: block;
 `;
 
 const DetailsBox = styled.div`
@@ -127,7 +127,7 @@ const PaymentBox = styled.div`
     justify-content: flex-end;
   }
   & .payment-label {
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 1.4rem;
@@ -136,7 +136,7 @@ const PaymentBox = styled.div`
     color: #212121;
   }
   & .table {
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 300;
     font-size: 1rem;
@@ -158,7 +158,7 @@ const PriceBox = styled.div`
     justify-content: space-between;
   }
   & span {
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 1.4rem;

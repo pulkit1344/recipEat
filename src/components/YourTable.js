@@ -124,7 +124,7 @@ const StyledRemainingCard = styled.div`
       color: #fafafa;
     }
     & .price {
-      font-family: Manrope;
+      font-family: "Manrope";
       font-style: normal;
       font-weight: 800;
       font-size: 2.4rem;

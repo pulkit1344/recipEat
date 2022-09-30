@@ -78,7 +78,7 @@ const PaymentContainer = styled.div`
     flex-direction: column;
   }
   & .price {
-    font-family: Manrope;
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 800;
     font-size: 2.4rem;
